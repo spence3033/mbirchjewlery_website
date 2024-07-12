@@ -1,0 +1,39 @@
+.text1{
+  font-size: 2em;
+  font-weight: 500;
+  width:40%;
+  text-align: center;
+}
+.line1{
+  border:1px solid black;
+  height:0;
+  width:30%
+}
+.centerItemsInline{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.imageFullWidth{
+  width:100%;
+  height:40rem;
+  max-height: 1500px;
+  max-width: 1500px;
+  object-fit: cover;
+  overflow:hidden;
+}
+.partialImage{
+  width:100%;
+  aspect-ratio: 1/1;
+  border-radius:3rem;
+  overflow: hidden;
+}
+.textPrice{
+  position: relative;
+  bottom: 4rem;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  margin:0;
+  height:0;
+}
