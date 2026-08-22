@@ -63,3 +63,31 @@ src/app/
 - Fonts: Cormorant Garamond (display/serif) + Jost (body/sans)
 - Colors: cream, warm white, gold, charcoal, taupe, stone
 - Feel: editorial, minimal, refined — not corporate
+
+## Key File URLs
+Base raw URL: https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild
+
+### App Shell
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/app.ts
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/app.html
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/app.routes.ts
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/app.config.ts
+
+### Pages
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/pages/home/home.ts
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/pages/home/home.html
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/pages/home/home.scss
+
+### Components
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/components/nav/nav.ts
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/components/nav/nav.html
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/components/nav/nav.scss
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/components/hero/hero.ts
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/components/hero/hero.html
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/components/hero/hero.scss
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/components/gallery/gallery.ts
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/components/gallery/gallery.html
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/app/components/gallery/gallery.scss
+
+### Global Styles
+- https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/src/styles.scss
