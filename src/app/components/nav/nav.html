@@ -1,0 +1,32 @@
+<nav [class.scrolled]="scrolled()">
+  <div class="nav-inner container">
+
+    <a href="#" class="logo">
+      <span class="logo-main">mbirch</span>
+      <span class="logo-sub">jewelry</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#gallery">Collection</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="menu-toggle" (click)="toggleMenu()" [attr.aria-expanded]="menuOpen()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <div class="mobile-menu" [class.open]="menuOpen()">
+    <ul>
+      <li><a href="#gallery" (click)="toggleMenu()">Collection</a></li>
+      <li><a href="#shop" (click)="toggleMenu()">Shop</a></li>
+      <li><a href="#about" (click)="toggleMenu()">About</a></li>
+      <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+</nav>

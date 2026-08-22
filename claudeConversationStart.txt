@@ -1,6 +1,6 @@
 Hi Claude! We are building the mbirch jewelry website together.
 
 Please start by reading the CLAUDE.md file to get up to speed:
-https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/claude.md
+https://raw.githubusercontent.com/spence3033/mbirchjewlery_website/refs/heads/rebuild/claude.md?v=2
 
 Once you've read it, let me know you're ready and we'll continue where we left off.

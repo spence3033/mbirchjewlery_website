@@ -1,0 +1,23 @@
+<section class="gallery section" id="gallery">
+  <div class="gallery-header container">
+    <span class="section-label">The Collection</span>
+    <h2>Made by hand.<br><em>Worn with intention.</em></h2>
+    <p>Each piece is crafted individually — no two are exactly alike.</p>
+  </div>
+
+  <div class="gallery-grid container">
+    @for (item of items; track item.id) {
+      <div class="gallery-item" [class]="item.aspect">
+        <div class="gallery-placeholder">
+          <div class="placeholder-inner">
+            <span class="placeholder-icon">✦</span>
+          </div>
+        </div>
+        <div class="gallery-caption">
+          <span class="caption-title">{{ item.title }}</span>
+          <span class="caption-sub">{{ item.subtitle }}</span>
+        </div>
+      </div>
+    }
+  </div>
+</section>
