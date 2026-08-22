@@ -4,6 +4,6 @@ export const routes: Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('./components/home/home').then(m => m.HomeComponent)
+      import('./pages/home/home').then(m => m.HomeComponent)
   }
 ];
