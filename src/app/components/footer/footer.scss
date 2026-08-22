@@ -1,0 +1,108 @@
+footer {
+  background: var(--color-ink);
+  color: var(--color-stone);
+  padding-top: var(--space-xl);
+}
+
+// ─── Main Row ─────────────────────────────────────────────────────────────────
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--space-lg);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ─── Brand ───────────────────────────────────────────────────────────────────
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+
+  .logo-main {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-cream);
+    letter-spacing: 0.04em;
+  }
+
+  .logo-sub {
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+  }
+
+  p {
+    margin-top: var(--space-sm);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--color-taupe);
+    line-height: 1.8;
+    max-width: 30ch;
+  }
+}
+
+// ─── Links ───────────────────────────────────────────────────────────────────
+.footer-links,
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+
+  a {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--color-taupe);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color var(--transition-base);
+
+    &:hover {
+      color: var(--color-gold);
+    }
+  }
+}
+
+.footer-heading {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-cream);
+  margin-bottom: var(--space-xs);
+}
+
+// ─── Bottom Bar ──────────────────────────────────────────────────────────────
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--space-md);
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+
+  span {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 300;
+    color: var(--color-taupe);
+    letter-spacing: 0.05em;
+  }
+}

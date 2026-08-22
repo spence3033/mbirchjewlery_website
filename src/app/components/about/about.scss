@@ -1,0 +1,112 @@
+.about {
+  background: var(--color-warm-white);
+}
+
+// ─── Layout ──────────────────────────────────────────────────────────────────
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+// ─── Image ───────────────────────────────────────────────────────────────────
+.about-image {
+  position: relative;
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+    margin-inline: auto;
+  }
+}
+
+.image-placeholder {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(
+    145deg,
+    var(--color-stone),
+    var(--color-warm-white)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-icon {
+  font-size: 2rem;
+  color: var(--color-gold);
+  opacity: 0.3;
+  animation: slowSpin 16s linear infinite;
+}
+
+// Decorative offset border
+.image-accent {
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--color-gold-light);
+  transform: translate(16px, 16px);
+  z-index: 0;
+  opacity: 0.6;
+}
+
+// ─── Content ─────────────────────────────────────────────────────────────────
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+
+  h2 {
+    em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--color-gold);
+    }
+  }
+
+  p {
+    line-height: 1.9;
+    max-width: 52ch;
+  }
+}
+
+// ─── Values ──────────────────────────────────────────────────────────────────
+.about-values {
+  display: flex;
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.value-icon {
+  font-size: 0.8rem;
+  color: var(--color-gold);
+}
+
+.value-label {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-taupe);
+}
+
+// ─── Animation ───────────────────────────────────────────────────────────────
+@keyframes slowSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}

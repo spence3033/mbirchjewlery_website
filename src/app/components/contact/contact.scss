@@ -1,0 +1,136 @@
+.contact {
+  background: var(--color-cream);
+}
+
+// ─── Layout ──────────────────────────────────────────────────────────────────
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+// ─── Content ─────────────────────────────────────────────────────────────────
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+
+  h2 {
+    em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--color-gold);
+    }
+  }
+
+  p {
+    max-width: 48ch;
+    line-height: 1.9;
+  }
+}
+
+// ─── Links ───────────────────────────────────────────────────────────────────
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  transition: color var(--transition-base);
+
+  &:hover {
+    color: var(--color-gold);
+
+    .contact-link-icon {
+      border-color: var(--color-gold);
+      color: var(--color-gold);
+    }
+  }
+}
+
+.contact-link-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-stone);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: border-color var(--transition-base), color var(--transition-base);
+  color: var(--color-taupe);
+}
+
+// ─── Animation ───────────────────────────────────────────────────────────────
+@keyframes slowSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+// ─── Form ────────────────────────────────────────────────────────────────────
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  label {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-taupe);
+  }
+
+  input, textarea {
+    background: var(--color-warm-white);
+    border: 1px solid var(--color-stone);
+    padding: 0.75rem 1rem;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--color-charcoal);
+    resize: none;
+    outline: none;
+    opacity: 0.6;
+    cursor: not-allowed;
+
+    &::placeholder {
+      color: var(--color-stone);
+    }
+  }
+}
+
+.btn-submit {
+  padding: 0.85rem;
+  background: var(--color-stone);
+  border: none;
+  color: var(--color-taupe);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

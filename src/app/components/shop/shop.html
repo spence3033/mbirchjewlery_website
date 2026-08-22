@@ -1,0 +1,41 @@
+<section class="shop section" id="shop">
+  <div class="shop-header container">
+    <span class="section-label">Shop</span>
+    <h2>Find your piece.</h2>
+    <p>Every item is handcrafted — limited quantities, made with care.</p>
+  </div>
+
+  <div class="shop-filters container">
+    @for (filter of filters; track filter) {
+      <button
+        class="filter-btn"
+        [class.active]="activeFilter === filter"
+        (click)="setFilter(filter)">
+        {{ filter }}
+      </button>
+    }
+  </div>
+
+  <div class="shop-grid container">
+    @for (product of filtered; track product.id) {
+      <div class="product-card">
+        <div class="product-image">
+          <div class="image-placeholder">
+            <span class="placeholder-icon">✦</span>
+          </div>
+          @if (product.tag) {
+            <span class="product-tag">{{ product.tag }}</span>
+          }
+        </div>
+        <div class="product-info">
+          <div class="product-meta">
+            <span class="product-category">{{ product.category }}</span>
+            <span class="product-price">{{ formatPrice(product.price) }}</span>
+          </div>
+          <h4 class="product-name">{{ product.name }}</h4>
+          <button class="btn-buy">Buy Now</button>
+        </div>
+      </div>
+    }
+  </div>
+</section>
